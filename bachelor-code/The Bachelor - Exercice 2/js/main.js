@@ -12,14 +12,14 @@ function andiNext(){
 	andi.classList.toggle("hidden") //ON/OFF
 }
 
-// function claireNext(){
-// 	/*INSERTCODE*/.classList.add(/*INSERTCODE*/)
-// 	/*INSERTCODE*/.classList.add(/*INSERTCODE*/)
-// 	/*INSERTCODE*/.classList.toggle(/*INSERTCODE*/)
-// }
+ function claireNext(){
+	claire.classList.toggle("hidden")  //ON/OFF
+	sharleen.classList.add("hidden")
+	andi.classList.add("hidden")
+ }
 
-// function sharleenNext(){
-// 	/*INSERTCODE*/.classList.add(/*INSERTCODE*/)
-// 	/*INSERTCODE*/.classList.add(/*INSERTCODE*/)
-// 	/*INSERTCODE*/.classList.toggle(/*INSERTCODE*/)
-// }
+function sharleenNext(){
+	claire.classList.add("hidden")  
+	sharleen.classList.toggle("hidden")//ON/OFF
+	andi.classList.add("hidden") 
+}

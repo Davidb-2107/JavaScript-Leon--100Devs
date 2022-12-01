@@ -1,10 +1,14 @@
-const contestants = document.querySelectorAll(/*INSERTCODE*/)
+const contestants = document.querySelectorAll(".contestant")
 
-Array.from(contestants).forEach(element => element.addEventListener('click', /*INSERTCODE*/))
+// Add a listener to any of DOM elements that have the .contestant class
+Array.from(contestants).forEach(element => element.addEventListener('click', checkForRose))
 
 function checkForRose(click){
-	if(click.target.classList.contains(/*INSERTCODE*/)){
-		document.querySelector('#nikki').classList.toggle(/*INSERTCODE*/)
+	// The thing that was clicked, those it has the class of rose ?
+		//if yes - so it's Nikki
+	if(click.target.classList.contains("rose")){
+		document.querySelector('#nikki').classList.toggle("hidden")
+		//Otherwise it's Claire
 	}else{
 		alert("Wrong!");
 	}

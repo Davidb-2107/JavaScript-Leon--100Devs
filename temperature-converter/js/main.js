@@ -1,14 +1,20 @@
 //Write your pseudo code first! 
 
-// GET the value from the input & save it
-let select = document.querySelector("button");
+// GET the value in celsius from the input & save it
+//ON CLICK of the button, CALL the function
+let selectButton = document.querySelector("button").addEventListener("click", convert);
 
-//ON CLICK, call the function
-select.addEventListener("click", getValue)
-
-function getValue() {
-    let celsiusValue = document.querySelector('input[type="text"]').value
+function convert() {
+    let temp = document.querySelector('input[type="text"]').value
     // test
-    console.log(celsiusValue)
+    console.log(temp)
+    // USING a mathematical formula, convert it to Fahrenheit
+    temp = temp * 9/5 +32;
+    // DISPLAY the converted value
+    document.querySelector("#converted_value").textContent = temp;
+    
+
 }
+
+
 

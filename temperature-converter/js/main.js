@@ -16,5 +16,12 @@ function convert() {
 
 }
 
+let selectButton2 = document.querySelector("button").addEventListener("click", convertAndAlert);
+
+function convertAndAlert() {
+    let temperature = document.querySelector('input[type="text"]').value;
+    temperature = temperature * 9/5 + 32;
+    alert(temperature)
+}
 
 
